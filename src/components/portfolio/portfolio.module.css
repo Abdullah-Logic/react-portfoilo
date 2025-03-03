@@ -1,15 +1,32 @@
+.portfolio {
+    position: relative;
+}
+
 .portfolioContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    position: relative;
+    padding-bottom: 4rem;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(402px, 1fr));
+    gap: 1.2rem;
+    align-items: stretch;
 }
 
 .portfolioItem {
     background: var(--color-bg-variant);
     padding: 1.2rem;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    position: relative;
+    z-index: 1;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-grow: 1;
 }
 
 .portfolioItem:hover {
@@ -23,29 +40,87 @@
 }
 
 .portfolioItem h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 1rem;
+}
+
+.portfolioDesc {
+    margin-bottom: 1rem;
+    line-height: 1.3rem;
+}
+
+.portfolioTech {
+    line-height: 20px;
+    margin-bottom: 1rem;
+    flex-grow: 1;
 }
 
 .portfolioItemCta {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+/* ========= Swiper Buttons =========== */
+
+.swiperbutton {
+    border: none;
+    position: relative;
+    background: transparent;
+    font-size: 40px;
+    color: var(--color-primary);
+    bottom: 20rem;
+    left: 50%;
+    transform: translate(-100%);
+}
+
+.buttonNext {
+    left: calc(83% + 100px);
+}
+
+.buttonPrev {
+    left: calc(17% - 100px);
+}
+
+.swiperbutton:hover {
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.disabled,
+.disabled:hover {
+    color: var(--color-primary-variant);
+    cursor: default;
 }
 
 /* =========== MEDIA QURIES (Medium devices) ========== */
 
 @media screen and (max-width: 1024px) {
-    .portfolioContainer {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+    .swiperbutton {
+        border: none;
+        position: relative;
+        background: transparent;
+        font-size: 40px;
+        color: var(--color-primary);
+        bottom: -1rem;
+        left: 50%;
+        transform: translate(-100%);
+        padding: 0 5rem;
     }
 }
 
 /* =========== MEDIA QURIES (Small devices) ========== */
 
-@media screen and (max-width: 600px) {
-    .portfolioContainer {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+@media screen and (max-width: 400px) {
+    .swiperbutton {
+        border: none;
+        position: relative;
+        background: transparent;
+        font-size: 40px;
+        color: var(--color-primary);
+        bottom: -1rem;
+        left: 50%;
+        transform: translate(-100%);
+        padding: 0 2rem;
     }
 }

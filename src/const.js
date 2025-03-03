@@ -30,6 +30,7 @@ import {
     tribute,
     responsivebakery,
     portfolio,
+    edusity,
 } from "./assets/images";
 
 // End of portfolio imports
@@ -213,7 +214,7 @@ export const navLink = [
     {
         id: 1,
         icon: <IoHomeOutline />,
-        section: "header",
+        section: "home",
         tooltip: "Home",
     },
     {
@@ -247,43 +248,67 @@ export const navLink = [
 export const data = [
     {
         id: 1,
-        image: biakitchen,
-        title: "Bia's Baking Kitchen",
-        github: "https://github.com/Abdullah-Logic/bias-baking-kitchen.git",
+        image: edusity,
+        title: "Edusity Website",
+        desc: "This is a test clone of the Edusity website replicating its features and functionality as a practice project,",
+        tech: "React, ReCaptcha, React-Icons",
+        github:
+            "https://github.com/Abdullah-Logic/edusity-website",
+        demo: "https://edusity-website-pearl.vercel.app/",
     },
     {
         id: 2,
         image: responsivebakery,
         title: "Virtual Bakery",
+        desc: "This is a responsive bakery website made using HTML, CSS, and JavaScript as a practice project to enhance my front-end development skills.",
+        tech: "HTML, CSS, JS",
         github: "https://github.com/Abdullah-Logic/bakery-responsive.git",
     },
     {
         id: 3,
-        image: landingpage,
-        title: "Product Landing Page",
-        github:
-            "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
-    },
-    {
-        id: 4,
         image: techdoc,
         title: "Technical Documentation Page",
+        desc: "This is a technical documentation page made as a practice project.",
+        tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/technical_doc_page",
     },
     {
+        id: 4,
+        image: biakitchen,
+        title: "Bia's Baking Kitchen",
+        desc: "This is a bakery website for an online bakery made to reveal its products to the world.",
+        tech: "THML, CSS",
+        github: "https://github.com/Abdullah-Logic/bias-baking-kitchen.git",
+        demo: "https://biasbakingkitchen.tiiny.site",
+    },
+    {
         id: 5,
+        image: landingpage,
+        title: "Product Landing Page",
+        desc: "This is a simple product landing page made as a practice project.",
+        tech: "HTML, CSS",
+        github:
+            "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
+    },
+    {
+        id: 6,
         image: tribute,
         title: "Tribute Page",
+        desc: "This is a technical documentation page made as a practice project.",
+        tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/tribute_page",
     },
     {
-        id: 6,
+        id: 7,
         image: portfolio,
         title: "Simple Portfolio Page",
+        desc: "I made a simple portfolio page made to show my skills and work.",
+        tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/personal_port_page",
+        demo: "https://mabdullah-portfolio.w3spaces.com",
     },
 ];
 

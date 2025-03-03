@@ -1,35 +1,115 @@
+import { useRef, useState } from "react";
 import { data } from "../../const";
 import styles from "./portfolio.module.css";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FaGreaterThan } from "react-icons/fa";
+import { FaLessThan } from "react-icons/fa";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Portfolio = () => {
+  const swiperRef = useRef(null);
+
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
+  const handleSlideChange = (swiper) => {
+    setIsBeginning(swiper.isBeginning);
+    setIsEnd(swiper.isEnd);
+  };
+
   return (
-    <section id="portfolio">
+    <section className={styles.portfolio}>
       <h5>My recent work</h5>
       <h2>Portfolio</h2>
 
-      <div className={`container ${styles.portfolioContainer} `}>
-        {data.map(({ id, image, title, github }) => {
-          return (
-            <article key={id} className={styles.portfolioItem}>
-              <div className={styles.portfolioItemImage}>
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-
-              <div className={styles.portfolioItemCta}>
-                <a
-                  href={github}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
+      <Swiper
+        className={`container ${styles.portfolioContainer}`}
+        modules={[Navigation]}
+        spaceBetween={40}
+        slidesPerView={3}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSlideChange={handleSlideChange}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          600: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1920: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }}
+      >
+        {data.map(({ id, image, title, desc, tech, github, demo }) => (
+          <SwiperSlide key={id} className={styles.portfolioItem}>
+            <div className={styles.portfolioItemImage}>
+              <img src={image} alt={title} />
+            </div>
+            <h3>{title}</h3>
+            <p className={`text-light ${styles.portfolioDesc}`}>{desc}</p>
+            <p className={`${styles.portfolioTech}`}>
+              <b>Tech Stack:</b>
+              <span className="text-light">{tech}</span>
+            </p>
+            <div className={styles.portfolioItemCta}>
+              <a
+                href={github}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>
+              {demo && (
+                <a href={demo} className="btn" target="_blank" rel="noreferrer">
+                  Demo
                 </a>
-              </div>
-            </article>
-          );
-        })}
-      </div>
+              )}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <button
+        className={`${styles.buttonPrev} ${styles.swiperbutton} ${
+          isBeginning ? styles.disabled : ""
+        }`}
+        onClick={() => swiperRef.current?.slidePrev()}
+        disabled={isBeginning}
+      >
+        <FaLessThan />
+      </button>
+      <button
+        className={`${styles.buttonNext} ${styles.swiperbutton} ${
+          isEnd ? styles.disabled : ""
+        }`}
+        onClick={() => swiperRef.current?.slideNext()}
+        disabled={isEnd}
+      >
+        <FaGreaterThan />
+      </button>
     </section>
   );
 };
