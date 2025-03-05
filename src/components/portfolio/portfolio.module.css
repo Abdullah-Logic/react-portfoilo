@@ -1,15 +1,32 @@
+.portfolio {
+    position: relative;
+}
+
 .portfolioContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    position: relative;
+    padding-bottom: 4rem;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(402px, 1fr));
+    gap: 1.2rem;
+    align-items: stretch;
 }
 
 .portfolioItem {
     background: var(--color-bg-variant);
     padding: 1.2rem;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    position: relative;
+    z-index: 1;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-grow: 1;
 }
 
 .portfolioItem:hover {
@@ -23,29 +40,143 @@
 }
 
 .portfolioItem h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 1rem;
+}
+
+.portfolioDesc {
+    margin-bottom: 1rem;
+    line-height: 1.3rem;
+}
+
+.portfolioTech {
+    line-height: 20px;
+    margin-bottom: 1rem;
+    flex-grow: 1;
 }
 
 .portfolioItemCta {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+/* ========= Swiper Buttons =========== */
+
+.swiperbutton {
+    border: none;
+    position: absolute;
+    background: transparent;
+    font-size: 40px;
+    color: var(--color-primary);
+    bottom: 20rem;
+    left: 50%;
+    transform: translate(-100%);
+}
+
+.buttonNext {
+    left: calc(88% + 100px);
+}
+
+.buttonPrev {
+    left: calc(12% - 100px);
+    transform: rotate(180deg);
+}
+
+.swiperbutton:hover {
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.disabled,
+.disabled:hover {
+    display: none;
+}
+
+/* ========= Custom Arrows ========= */
+
+.arrowButton {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    gap: 4px;
+    transition: all 0.3s ease;
+}
+
+.arrowButton:hover {
+    animation: move 2s infinite ease;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.round {
+    width: 6px;
+    height: 6px;
+    background: var(--color-bg);
+    border: var(--color-primary) solid 1px;
+    border-radius: 50%;
+}
+
+.line {
+    display: flex;
+    gap: 4px;
+}
+
+.two {
+    transform: translateX(10px);
+}
+
+.three {
+    transform: translateX(20px);
+}
+
+.four {
+    transform: translateX(30px);
+}
+
+.five {
+    transform: translateX(20px);
+}
+
+.six {
+    transform: translateX(10px);
 }
 
 /* =========== MEDIA QURIES (Medium devices) ========== */
 
 @media screen and (max-width: 1024px) {
-    .portfolioContainer {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+    .swiperbutton {
+        border: none;
+        position: absolute;
+        background: transparent;
+        font-size: 40px;
+        color: var(--color-primary);
+        bottom: -2rem;
+        left: 50%;
+        transform: translate(-100%);
     }
-}
 
-/* =========== MEDIA QURIES (Small devices) ========== */
+    .buttonNext {
+        left: calc(50% + 100px);
+    }
 
-@media screen and (max-width: 600px) {
-    .portfolioContainer {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    .buttonPrev {
+        left: calc(50% - 100px);
+        transform: rotate(180deg);
     }
 }

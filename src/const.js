@@ -30,6 +30,8 @@ import {
     tribute,
     responsivebakery,
     portfolio,
+    edusity,
+    reactportfolio,
 } from "./assets/images";
 
 // End of portfolio imports
@@ -213,7 +215,7 @@ export const navLink = [
     {
         id: 1,
         icon: <IoHomeOutline />,
-        section: "header",
+        section: "home",
         tooltip: "Home",
     },
     {
@@ -247,43 +249,77 @@ export const navLink = [
 export const data = [
     {
         id: 1,
-        image: biakitchen,
-        title: "Bia's Baking Kitchen",
-        github: "https://github.com/Abdullah-Logic/bias-baking-kitchen.git",
+        image: reactportfolio,
+        title: "React Portfolio",
+        desc: "A fully functional, dynamic and responsive portfolio made with react to showcase skills and achievements (For Client).",
+        tech: "React, Email-js, React-Icons, Swiper.js",
+        github:
+            "https://github.com/Abdullah-Logic/react-portfoilo",
+        demo: "https://react-portfoilo-mu.vercel.app/",
     },
     {
         id: 2,
-        image: responsivebakery,
-        title: "Virtual Bakery",
-        github: "https://github.com/Abdullah-Logic/bakery-responsive.git",
+        image: edusity,
+        title: "Edusity Website",
+        desc: "This is a clone of the Edusity website replicating its features and functionality (Practice Project).",
+        tech: "React, ReCaptcha, React-Icons",
+        github:
+            "https://github.com/Abdullah-Logic/edusity-website",
+        demo: "https://edusity-website-pearl.vercel.app/",
     },
     {
         id: 3,
-        image: landingpage,
-        title: "Product Landing Page",
-        github:
-            "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
+        image: responsivebakery,
+        title: "Virtual Bakery",
+        desc: "This is a responsive bakery website made using HTML, CSS, and JavaScript to showcase client's different product (Practice Project).",
+        tech: "HTML, CSS, JS",
+        github: "https://github.com/Abdullah-Logic/bakery-responsive.git",
     },
     {
         id: 4,
         image: techdoc,
         title: "Technical Documentation Page",
+        desc: "This is a technical documentation page made that has all the information about Algorithms (Practice Project).",
+        tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/technical_doc_page",
     },
     {
         id: 5,
+        image: biakitchen,
+        title: "Bia's Baking Kitchen",
+        desc: "This is a bakery website for an online bakery made to reveal its products to the world.",
+        tech: "HTML, CSS",
+        github: "https://github.com/Abdullah-Logic/bias-baking-kitchen.git",
+        demo: "https://biasbakingkitchen.tiiny.site",
+    },
+    {
+        id: 6,
+        image: landingpage,
+        title: "Product Landing Page",
+        desc: "This is a simple product landing page made for newly launched prducts (Practice Project).",
+        tech: "HTML, CSS",
+        github:
+            "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
+    },
+    {
+        id: 7,
         image: tribute,
         title: "Tribute Page",
+        desc: "This tribute page honors the lives and achievements of influential figures, highlighting their impact on society. (Practice Project).",
+        tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/tribute_page",
     },
     {
-        id: 6,
+        id: 8,
         image: portfolio,
         title: "Simple Portfolio Page",
+        desc: "This is a simple portfolio page made to show my skills and work.",
+        tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/personal_port_page",
+        demo: "https://mabdullah-portfolio.w3spaces.com",
     },
 ];
 
