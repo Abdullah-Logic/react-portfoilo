@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FaAward } from "react-icons/fa6";
 import { GoProjectSymlink } from "react-icons/go";
 

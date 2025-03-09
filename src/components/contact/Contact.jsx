@@ -1,3 +1,4 @@
+import React from "react";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { contactOption } from "../../const";
@@ -129,7 +130,7 @@ const Contact = () => {
               <div className={styles.contactOptionIcon}>{logo}</div>
               <h4>{option}</h4>
               <h5>{info}</h5>
-              <a href={address} target="_blank" rel="noreferrer">
+              <a href={address} target="_blank" rel="noopener noreferrer">
                 Send a message
               </a>
             </article>

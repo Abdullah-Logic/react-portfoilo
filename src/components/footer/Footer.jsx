@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+import React from "react";
 import { footerLink, Socials } from "../../const";
 
 const Footer = () => {

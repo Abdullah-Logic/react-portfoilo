@@ -1,4 +1,5 @@
 import styles from "./experience.module.css";
+import React from "react";
 import { MdVerified } from "react-icons/md";
 import { frontEnd, backEnd, tools, other } from "../../const";
 

@@ -1,5 +1,6 @@
 import { Socials } from "../../const";
 import styles from "./header.module.css";
+import React from "react";
 
 const HeaderSocials = () => {
   return (

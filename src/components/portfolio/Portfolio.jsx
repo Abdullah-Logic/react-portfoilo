@@ -1,4 +1,5 @@
 import { data } from "../../const";
+import React from "react";
 import styles from "./portfolio.module.css";
 
 const Portfolio = () => {
@@ -21,7 +22,7 @@ const Portfolio = () => {
                   href={github}
                   className="btn btn-primary"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Github
                 </a>

@@ -1,151 +1,150 @@
-.container.contactContainer {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
-}
-
-.contactOptions {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.contactOption {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.contactOption:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-}
-
-.contactOptionIcon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.contactOption a {
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
-}
-
-.contactOption a:hover {
-    font-weight: bold;
-    text-decoration: underline;
-    color: var(--color-primary);
-}
-
-.contactOption h5 {
-    color: var(--color-light);
-}
-
-.inputField {
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-    font-size: 1rem;
-}
-
-.inputField:focus {
-    outline: none;
-    border-color: var(--color-primary);
-}
-
-.inputError {
-    border: 2px solid red !important;
-}
-
-.warningText {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 5px;
-    display: inline-block;
-}
-
-.errorMessage {
-    color: var(--color-white);
-    background: red;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.successMessage {
-    color: var(--color-white);
-    background: green;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.closeButton {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 0.9rem;
-    color: var(--color-white);
-}
-
-.closeButton:hover {
-    cursor: pointer;
-}
-
-input:-webkit-autofill {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: var(--color-white) !important;
-}
-
-input:-webkit-autofill:focus {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: var(--color-white) !important;
-}
-
-
 /* =============== FORM =============== */
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: var(--color-white);
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  padding: 1.5rem;
+  resize: none;
+  width: 100%;
+}
+
+.container.contactContainer {
+  display: grid;
+  gap: 12%;
+  grid-template-columns: 30% 58%;
+  width: 58%;
+}
+
+.contactOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contactOption {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.contactOption:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+.contactOptionIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactOption a {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+}
+
+.contactOption a:hover {
+  color: var(--color-primary);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contactOption h5 {
+  color: var(--color-light);
+}
+
+.inputField {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.inputField:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.inputError {
+  border: 2px solid red !important;
+}
+
+.warningText {
+  color: red;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.errorMessage {
+  background: red;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  color: var(--color-white);
+  font-size: 0.9rem;
+  padding: 10px;
+  position: relative;
+}
+
+.successMessage {
+  background: green;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  color: var(--color-white);
+  font-size: 0.9rem;
+  padding: 10px;
+  position: relative;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  font-size: 0.9rem;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-white) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-white) !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 /* =========== MEDIA QURIES (Medium devices) ========== */
 
-@media screen and (max-width: 1024px) {
-    .container.contactContainer {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+@media screen and (width <= 1024px) {
+  .container.contactContainer {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========== MEDIA QURIES (Small devices) ========== */
 
-@media screen and (max-width: 600px) {
-    .container.contactContainer {
-        width: var(--container-width-sm);
-    }
+@media screen and (width <= 600px) {
+  .container.contactContainer {
+    width: var(--container-width-sm);
+  }
 }
