@@ -1,50 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 :root {
-    --color-bg: #2C3E50;
-    --color-bg-variant: #3d5c7c;
-    --color-primary: #F1D1A5;
-    --color-primary-variant: rgba(198, 156, 109, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
-
-    --transition: all 400ms ease;
-
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+  --color-bg: #2c3e50;
+  --color-bg-variant: #3d5c7c;
+  --color-primary: #f1d1a5;
+  --color-primary-variant: rgb(198 156 109 / 40%);
+  --color-white: #fff;
+  --color-light: rgb(255 255 255 / 60%);
+  --transition: all 400ms ease;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 body {
-    font-family: "Quicksand", sans-serif;
-    background-color: var(--color-bg);
-    color: var(--color-white);
-    line-height: 1.7;
-    background-image: url(./assets/bg-texture.png);
+  background-color: var(--color-bg);
+  background-image: url("./assets/bg-texture.png");
+  color: var(--color-white);
+  font-family: Quicksand, sans-serif;
+  line-height: 1.7;
 }
 
 /* ========= GENERAL STYLES ========== */
 
 .container {
-    width: var(--container-width-lg);
-    margin: 0 auto;
+  margin: 0 auto;
+  width: var(--container-width-lg);
 }
 
 h1,
@@ -52,89 +50,89 @@ h2,
 h3,
 h4,
 h5 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 section {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
-section>h5 {
-    text-align: center;
-    color: var(--color-light);
+section > h5 {
+  color: var(--color-light);
+  text-align: center;
 }
 
-section>h2 {
-    text-align: center;
-    color: var(--color-primary);
-    margin-bottom: 3rem;
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .text-light {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 a {
-    color: var(--color-primary);
-    transition: var(--transition);
+  color: var(--color-primary);
+  transition: var(--transition);
 }
 
 a:hover {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.4rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  transition: var(--transition);
+  width: max-content;
 }
 
 .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
+  background: var(--color-white);
+  border-color: transparent;
+  color: var(--color-bg);
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+  background: var(--color-primary);
+  color: var(--color-bg);
 }
 
 img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* =========== MEDIA QURIES (Medium devices) ========== */
 
-@media screen and (max-width: 1024px) {
-    .container {
-        width: var(--container-width-md);
-    }
+@media screen and (width <= 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
 
-    section {
-        margin-top: 6rem;
-    }
+  section {
+    margin-top: 6rem;
+  }
 }
 
 /* =========== MEDIA QURIES (Small devices) ========== */
 
-@media screen and (max-width: 1024px) {
-    .container {
-        width: var(--container-width-sm);
-    }
+@media screen and (width <= 1024px) {
+  .container {
+    width: var(--container-width-sm);
+  }
 
-    section>h2 {
-        margin-bottom: 2rem;
-    }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }

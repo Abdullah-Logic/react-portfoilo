@@ -1,74 +1,73 @@
 .servicesContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .service {
-    background: var(--color-bg-variant);
-    border-radius: 0.5rem 0.5rem 2rem 2rem;
-    border: 1px solid var(--color-primary);
-    height: fit-content;
-    transition: var(--transition);
+  background: var(--color-bg-variant);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
+  height: fit-content;
+  transition: var(--transition);
 }
 
 .service:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
 }
 
 .serviceHead {
-    background: var(--color-primary);
-    padding: 2rem;
-    border-radius: 0.5rem 0.5rem 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  background: var(--color-primary);
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgb(0 0 0 / 10%);
+  padding: 2rem;
 }
 
 .serviceHead h3 {
-    color: var(--color-bg);
-    font-size: 1rem;
-    text-align: center;
+  color: var(--color-bg);
+  font-size: 1rem;
+  text-align: center;
 }
 
 .serviceList {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .serviceList li {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .serviceList-icon {
-    color: var(--color-primary);
-    margin-top: 2px;
+  color: var(--color-primary);
+  margin-top: 2px;
 }
 
 .serviceList p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
-
 
 /* =========== MEDIA QURIES (Medium devices) ========== */
 
-@media screen and (max-width: 1024px) {
-    .servicesContainer {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+@media screen and (width <= 1024px) {
+  .servicesContainer {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .service {
-        height: auto;
-    }
+  .service {
+    height: auto;
+  }
 }
 
 /* =========== MEDIA QURIES (Small devices) ========== */
 
-@media screen and (max-width: 600px) {
-    .servicesContainer {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+@media screen and (width <= 600px) {
+  .servicesContainer {
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
 }

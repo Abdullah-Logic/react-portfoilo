@@ -1,6 +1,7 @@
 import { navLink } from "../../const";
 import styles from "./nav.module.css";
 import { useState, useEffect } from "react";
+import React from "react";
 
 const Tooltip = ({ text, children }) => (
   <div className={styles.tooltipContainer}>

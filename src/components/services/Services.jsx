@@ -1,5 +1,6 @@
 import { design, webDev, contentCreation } from "../../const";
 import styles from "./services.module.css";
+import React from "react";
 import { BiCheck } from "react-icons/bi";
 
 const Services = () => {

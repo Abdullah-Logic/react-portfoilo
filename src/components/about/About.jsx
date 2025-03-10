@@ -1,4 +1,5 @@
 import styles from "./about.module.css";
+import React from "react";
 import { meAbout } from "../../assets/images";
 import { aboutCards } from "../../const";
 
