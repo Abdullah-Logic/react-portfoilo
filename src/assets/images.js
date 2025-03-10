@@ -1,5 +1,5 @@
 export { default as bgTexture } from './bg-texture.png';
-export { default as meAbout } from './me-about.png';
+export { default as meAbout } from './me-about.jpeg';
 export { default as me } from './me.png';
 export { default as biakitchen } from './bia-kitchen.png';
 export { default as landingpage } from './landing.png';
