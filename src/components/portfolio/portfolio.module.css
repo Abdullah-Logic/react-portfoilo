@@ -1,182 +1,182 @@
 .portfolio {
-    position: relative;
+  position: relative;
 }
 
 .portfolioContainer {
-    align-items: stretch;
-    display: grid !important;
-    gap: 1.2rem;
-    grid-template-columns: repeat(auto-fit, minmax(402px, 1fr));
-    padding-bottom: 4rem;
-    position: relative;
+  align-items: stretch;
+  display: grid !important;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(402px, 1fr));
+  padding-bottom: 4rem;
+  position: relative;
 }
 
 .portfolioItem {
-    align-items: stretch;
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
-    border-radius: 2rem;
-    display: flex !important;
-    flex-direction: column;
-    flex-grow: 1;
-    height: 100%;
-    justify-content: flex-start;
-    min-height: 600px;
-    padding: 1.2rem;
-    position: relative;
-    transition: var(--transition);
-    width: 100%;
-    z-index: 1;
+  align-items: stretch;
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  display: flex !important;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: flex-start;
+  min-height: 600px;
+  padding: 1.2rem;
+  position: relative;
+  transition: var(--transition);
+  width: 100%;
+  z-index: 1;
 }
 
 .portfolioItem:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+  background: transparent;
+  border-color: var(--color-primary-variant);
 }
 
 .portfolioItemImage {
-    border-radius: 1.5rem;
-    overflow: hidden;
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .portfolioItem h3 {
-    margin: 1.2rem 0 1rem;
+  margin: 1.2rem 0 1rem;
 }
 
 .portfolioDesc {
-    line-height: 1.3rem;
-    margin-bottom: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .portfolioTech {
-    flex-grow: 1;
-    line-height: 20px;
-    margin-bottom: 1rem;
+  flex-grow: 1;
+  line-height: 20px;
+  margin-bottom: 1rem;
 }
 
 .portfolioItemCta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    margin-top: auto;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: auto;
 }
 
 /* ========= Swiper Buttons =========== */
 
 .swiperbutton {
-    background: transparent;
-    border: none;
-    bottom: 20rem;
-    color: var(--color-primary);
-    font-size: 40px;
-    left: 50%;
-    position: absolute;
-    transform: translate(-100%);
+  background: transparent;
+  border: none;
+  bottom: 20rem;
+  color: var(--color-primary);
+  font-size: 40px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-100%);
 }
 
 .buttonNext {
-    left: calc(88% + 100px);
+  left: calc(88% + 100px);
 }
 
 .buttonPrev {
-    left: calc(12% - 100px);
-    transform: rotate(180deg);
+  left: calc(12% - 100px);
+  transform: rotate(180deg);
 }
 
 .swiperbutton:hover {
-    color: var(--color-white);
-    cursor: pointer;
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .disabled,
 .disabled:hover {
-    display: none;
+  display: none;
 }
 
 /* ========= Custom Arrows ========= */
 
 .arrowButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    transition: all 0.3s ease;
-    width: 70px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.3s ease;
+  width: 70px;
 }
 
 .arrowButton:hover {
-    animation: move 2s infinite ease;
+  animation: move 2s infinite ease;
 }
 
 @keyframes move {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    50% {
-        transform: translateX(20px);
-    }
+  50% {
+    transform: translateX(20px);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .round {
-    background: var(--color-bg);
-    border: var(--color-primary) solid 1px;
-    border-radius: 50%;
-    height: 6px;
-    width: 6px;
+  background: var(--color-bg);
+  border: var(--color-primary) solid 1px;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
 }
 
 .line {
-    display: flex;
-    gap: 4px;
+  display: flex;
+  gap: 4px;
 }
 
 .two {
-    transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 .three {
-    transform: translateX(20px);
+  transform: translateX(20px);
 }
 
 .four {
-    transform: translateX(30px);
+  transform: translateX(30px);
 }
 
 .five {
-    transform: translateX(20px);
+  transform: translateX(20px);
 }
 
 .six {
-    transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 /* =========== MEDIA QURIES (Medium devices) ========== */
 
 @media screen and (width <= 1024px) {
-    .swiperbutton {
-        background: transparent;
-        border: none;
-        bottom: -2rem;
-        color: var(--color-primary);
-        font-size: 40px;
-        left: 50%;
-        position: absolute;
-        transform: translate(-100%);
-    }
+  .swiperbutton {
+    background: transparent;
+    border: none;
+    bottom: -5rem;
+    color: var(--color-primary);
+    font-size: 40px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-100%);
+  }
 
-    .buttonNext {
-        left: calc(50% + 100px);
-    }
+  .buttonNext {
+    left: calc(50% + 100px);
+  }
 
-    .buttonPrev {
-        left: calc(50% - 100px);
-        transform: rotate(180deg);
-    }
+  .buttonPrev {
+    left: calc(50% - 100px);
+    transform: rotate(180deg);
+  }
 }
