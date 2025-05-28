@@ -19,7 +19,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className={styles.portfolio}>
+    <section id="portfolio" className={styles.portfolio}>
       <h5>My recent work</h5>
       <h2>Portfolio</h2>
       <Swiper

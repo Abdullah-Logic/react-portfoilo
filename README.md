@@ -1,4 +1,3 @@
-````markdown
 # Portfolio Website
 
 ## Overview
@@ -126,4 +125,3 @@ npx stylelint \"src/**/*.css\" --fix
 ## Demo
 
 For a live demo visit, [https://react-portfoilo-mu.vercel.app/](https://react-portfoilo-mu.vercel.app/)
-````

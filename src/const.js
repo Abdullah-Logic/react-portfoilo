@@ -20,6 +20,7 @@ import { FaRegUser } from "react-icons/fa";
 import { BsBriefcase } from "react-icons/bs";
 import { LiaToolsSolid } from "react-icons/lia";
 import { BiMessageDetail } from "react-icons/bi";
+import { IoExtensionPuzzleOutline } from "react-icons/io5";
 
 // End of navLink imports
 
@@ -239,6 +240,12 @@ export const navLink = [
     },
     {
         id: 5,
+        icon: <IoExtensionPuzzleOutline />,
+        section: "portfolio",
+        tooltip: "portfolio",
+    },
+    {
+        id: 6,
         icon: <BiMessageDetail />,
         section: "contact",
         tooltip: "contact",
