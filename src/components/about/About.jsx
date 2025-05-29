@@ -1,6 +1,6 @@
 import styles from "./about.module.css";
 import { meAbout } from "../../assets/images";
-import { aboutCards } from "../../const";
+import { aboutCards, aboutInfo } from "../../const";
 
 const About = () => {
   return (
@@ -26,12 +26,7 @@ const About = () => {
             ))}
           </div>
 
-          <p>
-            I have over 2 years of dedicated study and hands-on project
-            experience, creating numerous projects for learning and skill
-            development. While I haven’t yet stepped into a formal job role, I
-            am now fully prepared and eager to begin my professional journey.
-          </p>
+          <p>{aboutInfo}</p>
 
           <a href="#contact" className="btn btn-primary">
             Let's Talk

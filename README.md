@@ -1,9 +1,8 @@
-````markdown
 # Portfolio Website
 
 ## Overview
 
-Welcome to my **portfolio!** This project is an intermediate-level React application built using (create-react-app). It serves as a showcase of my skills, projects, and experience, featuring a clean, component-based architecture. The site is fully interactive and responsive, handling various user interactions and clicks, and includes an integrated EmailJS-powered contact form for seamless communication.
+Welcome to my **portfolio!** This project is an intermediate-level React application built using (create-react-app). It showcases my skills, projects, and experience through a clean, component-based architecture. The site is fully interactive and responsive, handling various user interactions and clicks, and includes an integrated EmailJS-powered contact form for seamless communication.
 
 ## Getting Started
 
@@ -12,13 +11,13 @@ To explore or modify the project, follow these steps:
 **Step 1:** Clone the repository:
 
 ```bash
-git clone https://github.com/Abdullah-Logic/react-portfoilo.git
+git clone https://github.com/Abdullah-Logic/react-portfolio.git
 ```
 
 **Step 2:** Navigate into the project folder:
 
 ```bash
-cd react-portfoilo
+cd react-portfolio
 ```
 
 **Step 3:** Install the dependencies:
@@ -125,5 +124,21 @@ npx stylelint \"src/**/*.css\" --fix
 
 ## Demo
 
-For a live demo visit, [https://react-portfoilo-mu.vercel.app/](https://react-portfoilo-mu.vercel.app/)
-````
+For a live demo visit, [https://abdullah-logic-portfolio.vercel.app/](https://abdullah-logic-portfolio.vercel.app/)
+
+## License – Muhammad Abdullah
+
+✔ You MAY:
+
+- Use this project as long as you have permission and you give a star to this repository
+- Modify the code as needed
+
+❌ You MAY NOT:
+
+- Resell, redistribute, or republish this project as your own
+- Claim ownership of the original portfolio
+
+Contact me for permission if you wish to use it as your own portfolio.
+
+- Author: `Muhammad Abdullah`
+- Email: `mabdullah.talk.com`

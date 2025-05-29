@@ -1,0 +1,127 @@
+.switchWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 99999;
+}
+
+.switchContainer {
+  position: relative;
+  width: 4em;
+  height: 2.25em;
+  border: solid transparent 2px;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 0.0625em hsla(223, 90%, 50%, 0),
+    0 0.125em 0.5em hsla(223, 10%, 10%, 0.1);
+  transition: background-color 0.6s, box-shadow 0.6s;
+}
+
+.switchContainer:hover {
+  border: solid var(--color-primary) 2px;
+  transition: var(--transition);
+  cursor: none;
+}
+
+.switchInput {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  margin: 0;
+}
+
+.switchIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.35em;
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.switchIcon {
+  color: var(--color-bg-variant);
+  width: 18px;
+  height: 18px;
+  transition: color 0.6s, transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.switchTrack {
+  position: absolute;
+  top: 50%;
+  left: 0.25em;
+  transform: translateY(-50%);
+  width: 1.35em;
+  height: 1.35em;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  transition: left 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 0;
+}
+
+.switchInput:checked + .switchTrack {
+  left: calc(100% - 1.6em);
+}
+
+.switchInput:checked ~ .switchIcons .switchIcon:first-of-type {
+  transform: rotate(-360deg);
+  color: var(--color-bg-variant);
+}
+
+.switchInput:checked ~ .switchIcons .switchIcon:last-of-type {
+  transform: rotate(360deg);
+  color: var(--color-bg);
+}
+
+.switchInput:not(:checked) ~ .switchIcons .switchIcon:first-of-type {
+  color: var(--color-bg);
+}
+
+.switchInput:focus-visible + .switchTrack {
+  box-shadow: 0 0 0 0.0625em var(--color-primary),
+    0 0.125em 0.5em hsla(223, 10%, 10%, 0.1);
+}
+
+.screenReaderOnly {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+.switchLabel {
+  margin-left: 0.5rem;
+  margin-top: 0.3rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--color-white);
+  position: relative;
+  width: 5.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+.modeText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  white-space: nowrap;
+}
+
+.modeText.visible {
+  opacity: 1;
+}

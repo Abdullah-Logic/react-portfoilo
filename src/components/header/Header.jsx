@@ -3,14 +3,17 @@ import styles from "./header.module.css";
 import CTA from "./CTA";
 import { me } from "../../assets/images";
 import HeaderSocial from "./HeaderSocials";
+import ThemeSwitch from "../themeSwitch/ThemeSwitch";
+import { name, role } from "../../const";
 
 const Header = () => {
   return (
     <header id="home">
+      <ThemeSwitch />
       <div className={`container ${styles.headerContainer} `}>
         <h5>Hello I'm</h5>
-        <h1>Muhammad Abdullah</h1>
-        <h5 className="text-light">Frontend Developer</h5>
+        <h1>{name}</h1>
+        <h5 className="text-light">{role}</h5>
         <CTA />
         <HeaderSocial />
 

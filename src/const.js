@@ -20,6 +20,7 @@ import { FaRegUser } from "react-icons/fa";
 import { BsBriefcase } from "react-icons/bs";
 import { LiaToolsSolid } from "react-icons/lia";
 import { BiMessageDetail } from "react-icons/bi";
+import { IoExtensionPuzzleOutline } from "react-icons/io5";
 
 // End of navLink imports
 
@@ -39,6 +40,11 @@ import {
 
 // End of imports
 
+export const name = "Muhammad Abdullah"
+export const role = "Frontend Developer"
+
+// End of header
+
 export const aboutCards = [
     {
         id: 1,
@@ -53,6 +59,11 @@ export const aboutCards = [
         description: "10+",
     },
 ]
+
+export const aboutInfo = `I have over 2 years of dedicated study and hands-on project
+            experience, creating numerous projects for learning and skill
+            development. While I haven’t yet stepped into a formal job role, I
+            am now fully prepared and eager to begin my professional journey.`
 
 // End of About
 
@@ -239,6 +250,12 @@ export const navLink = [
     },
     {
         id: 5,
+        icon: <IoExtensionPuzzleOutline />,
+        section: "portfolio",
+        tooltip: "portfolio",
+    },
+    {
+        id: 6,
         icon: <BiMessageDetail />,
         section: "contact",
         tooltip: "contact",
@@ -255,8 +272,8 @@ export const data = [
         desc: "A fully functional, dynamic and responsive portfolio made with react to showcase skills and achievements (For Client).",
         tech: "React.js, Email-js, React-Icons, Swiper.js",
         github:
-            "https://github.com/Abdullah-Logic/react-portfoilo",
-        demo: "https://react-portfoilo-mu.vercel.app/",
+            "https://github.com/Abdullah-Logic/react-portfolio",
+        demo: "https://abdullah-logic-portfolio.vercel.app/",
     },
     {
         id: 2,
