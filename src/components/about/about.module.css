@@ -5,25 +5,29 @@
 }
 
 .aboutMe {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   background: linear-gradient(
     45deg,
     transparent,
     var(--color-primary),
     transparent
   );
-  border-radius: 2rem;
+  border-radius: 6.6%;
   display: grid;
   place-items: center;
-  transform: scale(0.9);
   width: 100%;
 }
 
 .aboutMeImage {
-  border-radius: 2rem;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 6.4%;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
+  width: 100%;
 }
 
 .aboutMeImage:hover {
