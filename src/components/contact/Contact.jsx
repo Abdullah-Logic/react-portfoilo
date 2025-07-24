@@ -126,7 +126,13 @@ const Contact = () => {
         <div className={styles.contactOptions}>
           {contactOption.map(({ id, logo, option, info, address }) => (
             <article className={styles.contactOption} key={id}>
-              <div className={styles.contactOptionIcon}>{logo}</div>
+              <div
+                className={styles.contactOptionIcon}
+                aria-hidden="true"
+                focusable="false"
+              >
+                {logo}
+              </div>
               <h4>{option}</h4>
               <h5>{info}</h5>
               <a href={address} target="_blank" rel="noreferrer">
@@ -187,6 +193,7 @@ const Contact = () => {
 
           <button
             type="button"
+            name="Submit button"
             className="btn btn-primary"
             onClick={handleSubmit}
             disabled={isSubmitting}
@@ -202,8 +209,12 @@ const Contact = () => {
                   : styles.successMessage
               }`}
             >
-              <button onClick={closeWarning} className={styles.closeButton}>
-                <FaTimes />
+              <button
+                onClick={closeWarning}
+                className={styles.closeButton}
+                name="close warning button"
+              >
+                <FaTimes aria-hidden="true" focusable="false" />
               </button>
               {errorMessage}
             </p>

@@ -20,8 +20,11 @@ const Footer = () => {
               rel="noopener noreferrer"
               key={id}
               className={styles.tooltipContainer}
+              aria-label={tooltip}
             >
-              <div className={styles.icon}>{icon}</div>
+              <div className={styles.icon} aria-hidden="true">
+                {icon}
+              </div>
               <span className={styles.tooltip}>{tooltipValue}</span>
             </a>
           );

@@ -17,7 +17,10 @@ const Services = () => {
           <ul className={styles.serviceList}>
             {design.map(({ id, description }) => (
               <li key={id}>
-                <BiCheck className={styles.serviceListIcon} />
+                <BiCheck
+                  className={styles.serviceListIcon}
+                  aria-hidden="true"
+                />
                 <p>{description}</p>
               </li>
             ))}
@@ -33,7 +36,10 @@ const Services = () => {
           <ul className={styles.serviceList}>
             {webDev.map(({ id, description }) => (
               <li key={id}>
-                <BiCheck className={styles.serviceListIcon} />
+                <BiCheck
+                  className={styles.serviceListIcon}
+                  aria-hidden="true"
+                />
                 <p>{description}</p>
               </li>
             ))}
@@ -49,7 +55,10 @@ const Services = () => {
           <ul className={styles.serviceList}>
             {contentCreation.map(({ id, description }) => (
               <li key={id}>
-                <BiCheck className={styles.serviceListIcon} />
+                <BiCheck
+                  className={styles.serviceListIcon}
+                  aria-hidden="true"
+                />
                 <p>{description}</p>
               </li>
             ))}

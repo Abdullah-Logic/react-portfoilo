@@ -16,11 +16,15 @@ const Header = () => {
         <HeaderSocial />
 
         <div className={styles.me}>
-          <img src={me} alt="me" />
+          <img src={me} alt="my header" loading="lazy" />
         </div>
 
-        <a href="#contact" className={styles.scrollDown}>
-          <FaArrowDown />
+        <a
+          href="#contact"
+          className={styles.scrollDown}
+          aria-label="scroll down"
+        >
+          <FaArrowDown aria-hidden="true" />
         </a>
       </div>
     </header>

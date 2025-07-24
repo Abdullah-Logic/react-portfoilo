@@ -63,7 +63,7 @@ const Portfolio = () => {
         {data.map(({ id, image, title, desc, tech, github, demo }) => (
           <SwiperSlide key={id} className={styles.portfolioItem}>
             <div className={styles.portfolioItemImage}>
-              <img src={image} alt={title} />
+              <img src={image} alt={title} loading="lazy" />
             </div>
             <h3>{title}</h3>
             <p className={`text-light ${styles.portfolioDesc}`}>{desc}</p>
@@ -102,6 +102,7 @@ const Portfolio = () => {
         }`}
         onClick={() => swiperRef.current?.slidePrev()}
         disabled={isBeginning}
+        aria-label="next button"
       >
         <NavArrow />
       </button>
@@ -111,6 +112,7 @@ const Portfolio = () => {
         }`}
         onClick={() => swiperRef.current?.slideNext()}
         disabled={isEnd}
+        aria-label="previous button"
       >
         <NavArrow />
       </button>

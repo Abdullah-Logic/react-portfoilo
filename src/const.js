@@ -48,13 +48,13 @@ export const role = "Frontend Developer"
 export const aboutCards = [
     {
         id: 1,
-        logo: <FaAward />,
+        logo: <FaAward aria-hidden="true" />,
         heading: "Experience",
         description: "2+ years Studying",
     },
     {
         id: 2,
-        logo: <GoProjectSymlink />,
+        logo: <GoProjectSymlink aria-hidden="true" />,
         heading: "Projects",
         description: "10+",
     },
@@ -70,14 +70,14 @@ export const aboutInfo = `I have over 2 years of dedicated study and hands-on pr
 export const contactOption = [
     {
         id: 1,
-        logo: <MdOutlineEmail />,
+        logo: <MdOutlineEmail aria-hidden="true" />,
         option: "Email",
         info: "mabdullah.talk@gmail.com",
         address: "mailto:mabdullah.talk@gmail.com",
     },
     {
         id: 2,
-        logo: <FaWhatsapp />,
+        logo: <FaWhatsapp aria-hidden="true" />,
         option: "Whatsapp",
         info: "+92 331 559 0956",
         address: "https://api.whatsapp.com/send?phone=923315590956",
@@ -218,25 +218,25 @@ export const Socials = [
     {
         id: 1,
         link: "https://www.linkedin.com/in/Abdullah-Logic/",
-        icon: <FiLinkedin />,
+        icon: <FiLinkedin aria-hidden="true" />,
         tooltip: "Linkedin",
     },
     {
         id: 2,
         link: "https://github.com/Abdullah-Logic",
-        icon: <FaGithub />,
+        icon: <FaGithub aria-hidden="true" />,
         tooltip: "GitHub",
     },
     {
         id: 3,
         link: "https://leetcode.com/u/Abdullah-Logic/",
-        icon: <SiLeetcode />,
+        icon: <SiLeetcode aria-hidden="true" />,
         tooltip: "LeetCode",
     },
     {
         id: 4,
         link: "https://wakatime.com/@Abdullah_Logic",
-        icon: <SiWakatime />,
+        icon: <SiWakatime aria-hidden="true" />,
         tooltip: "WakaTime",
     },
 ]
@@ -246,37 +246,37 @@ export const Socials = [
 export const navLink = [
     {
         id: 1,
-        icon: <IoHomeOutline />,
+        icon: <IoHomeOutline aria-hidden="true" />,
         section: "home",
         tooltip: "Home",
     },
     {
         id: 2,
-        icon: <FaRegUser />,
+        icon: <FaRegUser aria-hidden="true" />,
         section: "about",
         tooltip: "about",
     },
     {
         id: 3,
-        icon: <BsBriefcase />,
+        icon: <BsBriefcase aria-hidden="true" />,
         section: "experience",
         tooltip: "experience",
     },
     {
         id: 4,
-        icon: <LiaToolsSolid />,
+        icon: <LiaToolsSolid aria-hidden="true" />,
         section: "services",
         tooltip: "services",
     },
     {
         id: 5,
-        icon: <IoExtensionPuzzleOutline />,
+        icon: <IoExtensionPuzzleOutline aria-hidden="true" />,
         section: "portfolio",
         tooltip: "portfolio",
     },
     {
         id: 6,
-        icon: <BiMessageDetail />,
+        icon: <BiMessageDetail aria-hidden="true" />,
         section: "contact",
         tooltip: "contact",
     },
@@ -308,7 +308,7 @@ export const data = [
     {
         id: 3,
         image: quizapp,
-        title: "Quiz Applicaton",
+        title: "Quiz Application",
         desc: "A full-stack quiz app built with React, featuring a custom backend and API for dynamic question handling and scoring (Practice Project).",
         tech: "React.js, Node.js, Express.js, Redux, MongoDb, Axios",
         github:

@@ -23,8 +23,16 @@ const ThemeSwitch = () => {
         <span className={styles.switchTrack}></span>
 
         <span className={styles.switchIcons}>
-          <FaRegSun className={styles.switchIcon} />
-          <IoMoonOutline className={styles.switchIcon} />
+          <FaRegSun
+            className={styles.switchIcon}
+            aria-hidden="true"
+            focusable="false"
+          />
+          <IoMoonOutline
+            className={styles.switchIcon}
+            aria-hidden="true"
+            focusable="false"
+          />
         </span>
 
         <span className={styles.screenReaderOnly}>Dark Mode</span>

@@ -13,7 +13,10 @@ const Experience = () => {
           <div className={styles.experienceContent}>
             {frontEnd.map(({ id, language, status }) => (
               <article className={styles.experienceDetails} key={id}>
-                <MdVerified className={styles.experienceDetailsIcon} />
+                <MdVerified
+                  className={styles.experienceDetailsIcon}
+                  aria-hidden="true"
+                />
                 <div>
                   <h4>{language}</h4>
                   <small className="text-light">{status}</small>
@@ -28,7 +31,10 @@ const Experience = () => {
           <div className={styles.experienceContent}>
             {backEnd.map(({ id, language, status }) => (
               <article className={styles.experienceDetails} key={id}>
-                <MdVerified className={styles.experienceDetailsIcon} />
+                <MdVerified
+                  className={styles.experienceDetailsIcon}
+                  aria-hidden="true"
+                />
                 <div>
                   <h4>{language}</h4>
                   <small className="text-light">{status}</small>
@@ -43,7 +49,10 @@ const Experience = () => {
           <div className={styles.experienceContent}>
             {tools.map(({ id, language, status }) => (
               <article className={styles.experienceDetails} key={id}>
-                <MdVerified className={styles.experienceDetailsIcon} />
+                <MdVerified
+                  className={styles.experienceDetailsIcon}
+                  aria-hidden="true"
+                />
                 <div>
                   <h4>{language}</h4>
                   <small className="text-light">{status}</small>
@@ -58,7 +67,10 @@ const Experience = () => {
           <div className={styles.experienceContent}>
             {other.map(({ id, language, status }) => (
               <article className={styles.experienceDetails} key={id}>
-                <MdVerified className={styles.experienceDetailsIcon} />
+                <MdVerified
+                  className={styles.experienceDetailsIcon}
+                  aria-hidden="true"
+                />
                 <div>
                   <h4>{language}</h4>
                   <small className="text-light">{status}</small>

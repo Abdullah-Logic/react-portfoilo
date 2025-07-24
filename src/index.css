@@ -43,7 +43,7 @@ body.dark {
   --color-primary: #f1d1a5;
   --color-primary-variant: rgba(198, 156, 109, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-light: rgba(255, 255, 255, 0.8);
 }
 
 html {

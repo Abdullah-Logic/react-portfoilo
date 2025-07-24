@@ -72,6 +72,7 @@ const Nav = () => {
                   handleNavClick(hrefValue);
                 }}
                 className={activeNav === hrefValue ? styles.active : ""}
+                aria-label={tooltip}
               >
                 {icon}
               </a>
